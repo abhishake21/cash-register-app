@@ -12,23 +12,25 @@
 
     <header>
         <h1 class="header-heading">Cash Register App</h1>
-        <p class="header-para">Enter the Total bill and cash amount and get the minimum number of notes to return.</p>
+        <p class="header-para">Enter the Total bill and cash amount to get the minimum number of notes to return.</p>
     </header>
     <main>
-        <div class='bill'>
-            <label for='bill-amount-label'>Bill Amount</label>
-            <input id='bill-amount-box' type='number'></input>
-            <button class="next">Next</button>
-            <p class='bill-error'></p>
+        <div class="bill">
+            <label for="bill-amount">Bill Amount</label>
+            <input id="bill-amount" type="number"></input>
+            <button class="next-btn">Next</button>
+            <p class="bill-error"></p>
         </div>
-        <div class='cash'>
-            <label for='cash-given-label'>Cash Given</label>
-            <input id='cash-given-box' type='number'></input>
-            <button class="check">Check</button>
-            <p class='cash-error'></p>
+        <div class="cash">
+            <label for="cash-given">Cash Given</label>
+            <input id="cash-given" type="number"></input>
+            <button class="check-btn">Check</button>
+            <p class="cash-error"></p>
         </div>
-        <table>
-            <caption>Return Change</caption>
+        <div class="divider"></div>
+        <p class="paid"></p>
+        <table class="table">
+            <caption class="table-heading">Return Change</caption>
             <tr>
                 <th>No. of Notes</th>
                 <td class="no-of-notes"></td>
