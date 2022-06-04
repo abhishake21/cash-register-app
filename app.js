@@ -78,7 +78,7 @@ function amountPaid() {
     divider.style.display = "flex";
     table.style.display = "none";
     billPaid.style.display = "block";
-    billPaid.innerText = 'Bill has been paid. Have a nice day.'
+    billPaid.innerText = 'Bill has been paid.\n Have a nice day.'
 }
 
 function calculateChange(amountToBeReturned) {
