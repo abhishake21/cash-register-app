@@ -23,7 +23,7 @@ header {
 }
 
 .header-heading {
-    padding: 1rem 0 0 0;
+    padding: 0.5rem 0.5rem 0 0.5rem;
     font-size: 2.5rem;
     text-decoration: 5px underline red;
     letter-spacing: 1px;
@@ -31,7 +31,7 @@ header {
 }
 .header-para {
     font-size: 1.2rem;
-    padding: 0.2rem 0 1rem 0;
+    padding: 0.2rem 0.5rem 1rem 0.5rem;
 }
 
 main {
@@ -106,7 +106,8 @@ table {
     flex-direction: column;
     border-collapse: collapse;
     font-size: 1.5rem;
-    margin: 0 0 1rem 0;
+    margin: auto;
+    width: 80%;
 }
 .table-heading {
     font-size: 2rem;
@@ -140,6 +141,59 @@ td {
     background-color: var(--primary-color);
     width: 70%;
     margin: 0.5rem auto;
-    padding: 0.2rem 0;
+    padding: 0.2rem 0.5rem;
     border-radius: 0.2rem;
+}
+
+@media (max-width:646px) {
+    .bill input, .cash input {
+        width: 80%;
+    }
+    main {
+        width: 90%;
+    }
+    table {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    th, td {
+        line-height: 1.8rem;
+        padding: 0 0.3rem;
+    }
+}
+
+@media (max-width:425px) {
+    .header-heading {
+        font-size: 2rem;
+        padding: 0.5rem 0;
+        letter-spacing: 0;
+        word-spacing: 0;
+    }
+    .header-para {
+        font-size: 1.1rem;
+    }
+    .bill label, .cash label {
+        font-size: 1.6rem;
+    }
+    .bill input, .cash input {
+        font-size: 1.3rem;
+    }
+    .next-btn, .check-btn {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .bill-error, .cash-error {
+        font-size: 1rem;
+        padding: 0.1rem 0.5rem;
+        line-height: 1.4rem;
+    }
+    .paid {
+        font-size: 1rem;
+    }
+    table {
+        font-size: 1.1rem;
+    }
+    .table-heading {
+        font-size: 1rem;
+    }
 }
